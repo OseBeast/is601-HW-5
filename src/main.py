@@ -1,4 +1,5 @@
 import sys
+from app import App
 from calculator.calculate import Calculate
 
 number_cruncher = Calculate()
@@ -35,4 +36,4 @@ def main():
     calculate_and_print(a, operation, b)
 
 if __name__ == '__main__':
-    main()
+    app = App().start()   # old method in this file is 'main()'
